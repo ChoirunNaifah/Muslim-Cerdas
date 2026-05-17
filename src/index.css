@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-playful: "Quicksand", sans-serif;
+
+  --color-sage: #88A282;
+  --color-sage-light: #7B9277;
+  --color-sage-dark: #3F4E3E;
+  --color-apricot: #FFAD84;
+  --color-cream: #FDFCFB;
+  --color-wrapper: #E5E9E4;
+  --color-charcoal: #3F4E3E;
+  --color-slate-dark: #1E292B;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-wrapper text-charcoal transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-slate-dark text-cream;
+  }
+}
+
+.mobile-container {
+  @apply max-w-[420px] mx-auto min-h-screen bg-cream dark:bg-slate-dark relative overflow-x-hidden shadow-[0_24px_48px_-12px_rgba(0,0,0,0.15)] rounded-[3rem] border-[8px] border-white dark:border-charcoal my-8;
+}
+
+/* Custom Nav transition */
+.nav-item-active {
+  @apply text-sage scale-110;
+}
+
+.card-soft {
+  @apply bg-white dark:bg-charcoal/30 rounded-[2rem] p-6 shadow-sm border border-black/[0.03] dark:border-white/5;
+}
+
+.btn-playful {
+  @apply active:scale-95 transition-transform duration-100;
+}
+

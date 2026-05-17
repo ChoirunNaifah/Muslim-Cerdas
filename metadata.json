@@ -1,0 +1,6 @@
+{
+  "name": "Muslim Cerdas",
+  "description": "A modern, playful mini self-improvement and habit tracker app for Muslims featuring daily ibadah checklists, digital tasbih, and reflection journals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
